@@ -25,7 +25,7 @@ a { color: inherit; }
 does with your information. In short: <strong>the developer runs no servers and has no accounts. The game does not
 collect your name, email or phone number. It uses a few third-party services (ads, anonymous
 analytics and crash reports, Google Play purchases and Google Play Games) that process some technical data as
-described below. Ads are never personalised.</strong></p>
+described below. The game requests non-personalised ads.</strong></p>
 
 <h2>What the game collects</h2>
 <p>Arrow Grid supports optional sign-in with Google Play Games Services. The game works fully without signing in.
@@ -54,12 +54,16 @@ ads that you choose to watch to earn a hint or an extra heart. There are no bann
 LevelPlay (ironSource) and its ad network partner Unity Ads. <strong>The ad software starts in the background a few
 seconds after the game opens</strong>, whether or not you ever watch an ad, so that ads are ready when they are
 needed.</p>
-<p><strong>All ads are non-personalised.</strong> The game tells the ad services not to personalise ads, to treat you
-as not consenting to personalised advertising, not to sell your data, and that the game is not directed at children
-under 13. The game does not request, read or send your Android advertising ID, and it does not ask for the
-advertising-ID permission or Android's ad-topics and ad-attribution permissions.</p>
+<p><strong>The game requests non-personalised ads.</strong> The game tells the ad services not to personalise ads, to
+treat you as not consenting to personalised advertising, not to sell your data, and that the game is not directed at
+children under 13. The game asks for the advertising-ID permission, so the ad services can read your Android
+advertising ID. They use it to deliver and measure ads, limit how often you see an ad and prevent fraud, and the game
+asks the ad services not to use it for personalised ads or interest profiles. The game does not ask for Android's
+ad-topics and ad-attribution permissions. You can reset or delete the advertising ID, or opt out of ads
+personalisation, in your device's ad settings (on most phones: Settings &gt; Google &gt; Ads, or Settings &gt; Privacy
+&gt; Ads).</p>
 <p>From the moment the ad software starts, the ad services may receive technical data to deliver and measure ads and to
-prevent fraud, such as your approximate location (from your IP address), device and app identifiers that are not the
+prevent fraud, such as your approximate location (from your IP address), device and app identifiers including the
 advertising ID, device and operating-system information, diagnostics, and how you interact with the ad. Ad providers
 act under their own privacy policies: <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity
 Game Player and App User Privacy Policy</a>. The developer does not receive this data and cannot identify you from
@@ -69,8 +73,8 @@ it.</p>
 <p>The game uses Google Firebase Analytics and Firebase Crashlytics.</p>
 <ul>
 <li><strong>Analytics:</strong> the game records a few anonymous gameplay events: a level or daily puzzle won, a level
-or daily puzzle failed, a hint used, and a hint pack bought. They carry no name, email, account or user ID. Analytics
-advertising features are turned off: advertising-ID collection, Google signals, ad personalisation, ad storage and ad
+or daily puzzle failed, a hint used, and a hint pack bought. They carry no name, email, account or user ID. In Firebase
+Analytics (this does not apply to the ad services above) advertising features are turned off: advertising-ID collection, Google signals, ad personalisation, ad storage and ad
 user data are all disabled. Google Analytics keeps this event data for <strong>2 months</strong>, then deletes it.</li>
 <li><strong>Crash reports:</strong> if the game crashes, Crashlytics sends a crash report: the technical error, the
 state of the app at the time, and basic device information (for example the device model and Android version) with a
@@ -104,8 +108,8 @@ device's settings at any time.</p>
 
 <h2>Third parties</h2>
 <p>The game includes these third-party components: Google Play Games Services, Google Play Billing (through Unity
-In-App Purchasing), Firebase Analytics and Crashlytics, and Unity LevelPlay with Unity Ads. It includes no behavioural
-advertising, no data brokers and no social-media trackers. When you download the game, Google Play handles the
+In-App Purchasing), Firebase Analytics and Crashlytics, and Unity LevelPlay with Unity Ads. The game requests
+non-personalised ads, and includes no data brokers and no social-media trackers. When you download the game, Google Play handles the
 download under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>, which the developer does not
 control. The developer does not sell your personal data.</p>
 
@@ -130,7 +134,8 @@ person's records. Analytics events are deleted automatically after 2 months and 
 your device's analytics or crash data removed sooner, email the address below and the developer will ask Firebase to
 delete it as far as Firebase allows.</li>
 <li><strong>Ad data</strong> is held by the ad providers under their own privacy policies; you can send them a
-deletion request through their privacy pages.</li>
+deletion request through their privacy pages. You can reset or delete your Android advertising ID in your device's ad
+settings (on most phones: Settings &gt; Google &gt; Ads, or Settings &gt; Privacy &gt; Ads).</li>
 <li><strong>Purchase records</strong> are held by Google Play; you can see them in your Google Account.</li>
 <li><strong>On your device:</strong> uninstall the game or clear its data.</li>
 </ul>
@@ -140,8 +145,8 @@ visibility setting (friends only, everyone, or only you).</p>
 
 <h2>Children and teens</h2>
 <p>The game is not directed at children under 13 and is intended for players aged 13 and over. For every player,
-whatever their age, ads are non-personalised, analytics advertising features are off, and the game builds no profile
-of you. If you are under 18, please ask a parent or guardian before buying anything, watching ads or signing in to
+whatever their age, the game requests non-personalised ads, Firebase Analytics advertising features are off, and the
+game builds no profile of you. If you are under 18, please ask a parent or guardian before buying anything, watching ads or signing in to
 Google Play Games. A parent or guardian who believes the game holds data about their child can email the address below
 and the developer will act on the request. The developer does not knowingly collect personal data such as names,
 emails or phone numbers from anyone.</p>

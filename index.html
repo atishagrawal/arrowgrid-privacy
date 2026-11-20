@@ -19,23 +19,23 @@ a { color: inherit; }
 <body>
 <main>
 <h1>Arrow Grid — Privacy Policy</h1>
-<p class="date">Effective 13 November 2026</p>
+<p class="date">Effective &lt;RELEASE DATE&gt;</p>
 
 <p>Arrow Grid ("the game") is made by Atish Agrawal, an independent developer. This policy explains what the game
-does with your information. In short: <strong>the developer runs no servers and has no accounts. The game does not
-collect your name, email or phone number. It uses a few third-party services (ads, anonymous
-analytics and crash reports, Google Play purchases and Google Play Games) that process some technical data as
-described below. The game requests non-personalised ads.</strong></p>
+does with your information. In short: <strong>the game gives every player an anonymous profile with a random generated name (never your real
+name) so you can appear on public leaderboards. The game does not collect your name, email or phone number. It uses a
+few third-party services (Unity Gaming Services for profiles and leaderboards, ads, anonymous analytics and crash
+reports, Google Play purchases and Google Play Games) that process some technical data as described below. The game
+requests non-personalised ads.</strong></p>
 
 <h2>What the game collects</h2>
-<p>Arrow Grid supports optional sign-in with Google Play Games Services. The game works fully without signing in.
-It shows a short ad after you finish a level, offers optional rewarded ads and optional in-app purchases of hints,
+<p>Arrow Grid creates an anonymous player profile for every player automatically, and supports optional sign-in with
+Google Play Games Services. The game works fully without signing in. It shows a short ad after you finish a level, offers optional rewarded ads and optional in-app purchases of hints,
 and uses anonymous analytics and crash reporting.</p>
 
 <h3>Google Play Games (optional)</h3>
 <p>If you sign in to Google Play Games, the game sends your achievements and best times to Google Play Games Services
-so they can appear on your achievements list and on leaderboards, including the Daily puzzle and Weekly cup
-leaderboards. This uses your Play Games profile (player ID, gamer name and avatar), which Google provides to the game.
+so they can appear on your achievements list. This uses your Play Games profile (player ID, gamer name and avatar), which Google provides to the game.
 The developer does not receive or store this data on its own servers; Google processes it under the Google Play Games
 Services terms and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. The Play Games SDK may
 also send diagnostics and analytics data to Google to keep the service stable.</p>
@@ -47,6 +47,32 @@ nothing is saved this way.</p>
 <p>If you sign in to Google Play Games and allow it when Google asks, the game's Friends page shows your Play Games
 friends (gamer name and levels cleared on the game's leaderboard) so you can compare progress. This list is
 shown on your device only; the game does not store it or send it anywhere, and the developer never receives it.</p>
+
+<h3 id="profiles">Player profiles and leaderboards</h3>
+<p>The first time you open the game online, it creates an anonymous player profile for you, without asking you to sign
+up. The profile is a Unity Authentication anonymous account with a random generated name such as "SwiftOtter#12345".
+You cannot choose or change the name, and the game never uses your real name for it. Your profile is created for every
+player the same way, whatever their age.</p>
+<p><strong>What other players can see.</strong> The game has three public leaderboards: levels completed, weekly cup
+points, and daily puzzle time. Anyone who plays the game can see your profile name and your scores on them, and, if
+they open your profile card, four stats: levels completed, stars, best daily streak and cup league. Nothing else about
+you is shown. Scores and stats are sent to the profile service when you play; the weekly and daily boards reset every
+week and every day at 12:30 pm IST, and no archive of past boards is kept.</p>
+<p><strong>Who processes it.</strong> Profiles and leaderboards run on Unity Gaming Services (Unity Authentication,
+Unity Leaderboards and Unity Cloud Code) provided by Unity Technologies, which acts for the developer. Unity assigns
+your profile a random player ID and processes the IP address your device connects from (to deliver the service and
+keep it secure). This is a separate Unity project from the one used for ads. Data is encrypted in transit. The
+developer can see and delete profiles and scores through Unity's tools. Unity handles this data under the
+<a href="https://unity.com/legal/privacy-policy">Unity Privacy Policy</a>.</p>
+<p><strong>How long it is kept.</strong> Your profile, name, scores and stats are kept until you delete your profile
+(see <a href="#deletion">Your choices and deletion</a>). Anonymous profiles cannot be recovered after you reinstall the
+game or lose your phone: a new profile with a new name is created instead, and the old one stays on the boards until
+it is deleted.</p>
+<p><strong>Ages 13 to 17.</strong> Players aged 13 to 17 get the same profile and appear on the boards in the same way
+as everyone else. The name is random and the game collects no real name, but if you are under 18 please ask a parent
+or guardian first, and email the address below if you want your profile removed.</p>
+<p>The game keeps your progress, hints and settings on your device as before; the profile holds only the name,
+scores and stats described above.</p>
 
 <h3>Ads</h3>
 <p>The game shows two kinds of ad: a short full-screen ad when you leave a level you have finished, and rewarded
@@ -73,7 +99,7 @@ it.</p>
 <p>The game uses Google Firebase Analytics and Firebase Crashlytics.</p>
 <ul>
 <li><strong>Analytics:</strong> the game records a few anonymous gameplay events: a level or daily puzzle won, a level
-or daily puzzle failed, a hint used, and a hint pack bought. They carry no name, email, account or user ID. In Firebase
+or daily puzzle failed, a hint used, and a hint pack bought. They carry no name or email, and the game does not attach your profile name to them. In Firebase
 Analytics (this does not apply to the ad services above) advertising features are turned off: advertising-ID collection, Google signals, ad personalisation, ad storage and ad
 user data are all disabled. Google Analytics keeps this event data for <strong>2 months</strong>, then deletes it.</li>
 <li><strong>Crash reports:</strong> if the game crashes, Crashlytics sends a crash report: the technical error, the
@@ -94,7 +120,7 @@ keeps no purchase records on its own servers. Google handles payments, refunds a
 
 <h2>Your game progress</h2>
 <p>Your game progress, hint balance and order IDs are saved on your own device so you can carry on where you left off.
-The developer cannot see them. Uninstalling the game or clearing its storage deletes the copy on your device. If you
+The developer cannot see them, apart from the scores and stats that appear on the public leaderboards through your player profile (see above). Uninstalling the game or clearing its storage deletes the copy on your device. If you
 are signed in to Google Play Games, a copy is also kept in Play Games Saved Games as described above. If you have
 Android backup turned on, Android may include this save in your device backup to your Google account; that backup is
 handled by Google, not by the developer, and you control it in your device settings. Hints you bought are kept with
@@ -108,16 +134,27 @@ device's settings at any time.</p>
 
 <h2>Third parties</h2>
 <p>The game includes these third-party components: Google Play Games Services, Google Play Billing (through Unity
-In-App Purchasing), Firebase Analytics and Crashlytics, and Unity LevelPlay with Unity Ads. The game requests
+In-App Purchasing), Firebase Analytics and Crashlytics, Unity LevelPlay with Unity Ads, and Unity Gaming Services
+(Authentication, Leaderboards and Cloud Code). The game requests
 non-personalised ads, and includes no data brokers and no social-media trackers. When you download the game, Google Play handles the
 download under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>, which the developer does not
 control. The developer does not sell your personal data.</p>
 
 <h2 id="deletion">Your choices and deletion</h2>
 <p>You can use the game without signing in, without watching ads and without buying anything. Notifications can be
-switched off at any time.</p>
+switched off at any time. The anonymous player profile is created automatically; you can delete it at any time as
+described below.</p>
 <p><strong>How to delete your Arrow Grid data:</strong></p>
 <ul>
+<li><strong>Player profile and leaderboard scores</strong> (the anonymous profile, its name, scores and stats, stored on
+Unity Gaming Services). Two ways to delete them:
+<br>1. <strong>In the game:</strong> open Me and tap "Delete my profile", then confirm. This removes your profile and
+all its scores and stats from the leaderboards. Your progress on your device stays. The game does not create a new
+profile until you choose to join the boards again.
+<br>2. <strong>By email,</strong> if you cannot open the game, or lost your phone (an anonymous profile cannot be
+recovered after a reinstall): email <a href="mailto:dir.atishagrawal@gmail.com">dir.atishagrawal@gmail.com</a> with
+your profile name including the number (for example "SwiftOtter#12345"; it is shown on your Me page and next to your
+scores on the boards). The developer deletes the profile and its scores within 30 days.</li>
 <li><strong>Play Games data</strong> (achievements, leaderboard scores and the progress saved with Play Games Saved
 Games) is stored by Google Play Games, not by the developer. To delete it in the Google Play Store app, tap your
 profile icon at the top right, then tap Settings &gt; General &gt; Play Games Profile &gt; Privacy &amp; Settings. Under
@@ -139,14 +176,17 @@ settings (on most phones: Settings &gt; Google &gt; Ads, or Settings &gt; Privac
 <li><strong>Purchase records</strong> are held by Google Play; you can see them in your Google Account.</li>
 <li><strong>On your device:</strong> uninstall the game or clear its data.</li>
 </ul>
-<p>The developer keeps no copy of your gameplay data, so nothing is retained by the developer after deletion; Google's
-and the ad providers' own retention follows their policies. Leaderboard visibility follows your Play Games profile
-visibility setting (friends only, everyone, or only you).</p>
+<p>Once your player profile is deleted, the developer keeps no copy of it or its scores. Apart from that profile, the
+developer keeps no copy of your gameplay data; Google's and the ad providers' own retention follows their policies.
+Visibility of Play Games achievements follows your Play Games profile visibility setting (friends only, everyone, or
+only you). Visibility of the game's own leaderboards does not depend on that setting: every player profile is public
+on them until deleted.</p>
 
 <h2>Children and teens</h2>
 <p>The game is not directed at children under 13 and is intended for players aged 13 and over. For every player,
 whatever their age, the game requests non-personalised ads, Firebase Analytics advertising features are off, and the
-game builds no profile of you. If you are under 18, please ask a parent or guardian before buying anything, watching ads or signing in to
+game builds no advertising profile of you. Every player, aged 13 and over, also gets the same anonymous leaderboard
+profile (see Player profiles and leaderboards above). If you are under 18, please ask a parent or guardian before buying anything, watching ads or signing in to
 Google Play Games. A parent or guardian who believes the game holds data about their child can email the address below
 and the developer will act on the request. The developer does not knowingly collect personal data such as names,
 emails or phone numbers from anyone.</p>
